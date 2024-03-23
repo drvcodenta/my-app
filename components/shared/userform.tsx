@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faBell, faMessage, faCommentsDollar, faAnglesRight } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faBell, faMessage, faCommentsDollar, faAnglesRight, faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 function UserForm() {
@@ -13,12 +13,15 @@ function UserForm() {
   };
 
   return (
-    <div className="h-screen pt-8 pb-4 bg-default flex w-96">
+    <>
+    <div className="relative h-screen">
         <button
-        className={`fixed top-1/2 ${isOpen ? 'left-96' : 'left-0'} transform -translate-y-1/2 p-2`}
+        className={`fixed top-1/2 ${isOpen ? 'left-96' : 'left-0'} transform -translate-y-1/2 p-2 transaction-all ease-in-out duration-500 ${isOpen ? 'left-96' : 'left-0'}`}
         onClick={toggleSidebar}>
-          {isOpen ? <FontAwesomeIcon icon={faAnglesRight} /> : <FontAwesomeIcon icon={faAnglesRight} />}
+          {isOpen ? <FontAwesomeIcon icon={faAnglesLeft} /> : <FontAwesomeIcon icon={faAnglesRight} />}
         </button>
+    </div>
+    <div className={`h-screen pt-8 pb-4 bg-default flex w-96 transition-all ease-in-out duration-500 ${isOpen? 'translate-x-0' :'-translate-x-full'}`}>
         {isOpen &&(
           <div className="absolute flex flex-col text-xl">
             <div className="text-white flex items-center w-full">
@@ -53,6 +56,7 @@ function UserForm() {
           </div>
         )}
     </div>
+    </>
   )
 }
 
