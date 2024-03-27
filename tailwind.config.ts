@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         'default': '#1e375f',
         'extra-dark': '#142341',
-        'pink': '#D6848E'
+        'pink': '#D6848E',
+        'sector': '#2355A0'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
