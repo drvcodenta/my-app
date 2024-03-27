@@ -1,7 +1,7 @@
 
 function MarketCard() {
   return (
-    <div className="border p-5 m-5">
+    <div className="border p-2 m-5">
         <div>
             <img src="assets\cloud-sunset-sunrise-mountain-preview.jpg" alt='sunrise' width={150} height={150} />
         </div>

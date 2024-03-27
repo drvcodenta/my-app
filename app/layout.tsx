@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="flex flex-row">
+        <div className="flex justify-between w-full">
           <UserForm />
           <div className="flex-1">
           {children}
