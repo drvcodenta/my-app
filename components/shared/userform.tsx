@@ -4,7 +4,6 @@ import { useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faBell, faMessage, faCommentsDollar, faAnglesRight, faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
 
-
 function UserForm() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -60,4 +59,4 @@ function UserForm() {
   )
 }
 
-export default UserForm
+export default UserForm;
